@@ -12,6 +12,12 @@
     screensaver.askForPasswordDelay = 0;
   };
 
+  # $ softwareupdate --install-rosetta --agree-to-license
+  # $ nix run "nixpkgs#legacyPackages.x86_64-darwin.hello"
+  nix.extraOptions = ''
+    extra-platforms = x86_64-darwin aarch64-darwin
+  '';
+
   homebrew = {
     enable = true;
 
