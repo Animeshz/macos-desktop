@@ -20,5 +20,10 @@
   # $ nix run "nixpkgs#legacyPackages.x86_64-darwin.hello"
   nix.extraOptions = ''
     extra-platforms = x86_64-darwin aarch64-darwin
+    max-jobs = auto
   '';
+
+  nix.gc.automatic = true;
+  nix.settings.auto-optimise-store = true;
+  nix.package = pkgs.lixPackageSets.stable.lix;
 }
