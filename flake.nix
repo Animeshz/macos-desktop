@@ -15,6 +15,9 @@
 
         system.configurationRevision = self.rev or self.dirtyRev or null;
         nix.settings.experimental-features = "nix-command flakes";
+
+        # IMPORTANT: to change in case of different user
+        system.primaryUser = "animesh";
       };
     in
     {
