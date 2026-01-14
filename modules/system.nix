@@ -12,6 +12,10 @@
     screensaver.askForPasswordDelay = 0;
   };
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.caskaydia-cove
+  ];
+
   # $ softwareupdate --install-rosetta --agree-to-license
   # $ nix run "nixpkgs#legacyPackages.x86_64-darwin.hello"
   nix.extraOptions = ''
