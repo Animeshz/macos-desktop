@@ -4,7 +4,9 @@
 
   system.defaults = {
     dock.autohide = true;
+    dock.mru-spaces = false;  # don't rearrange based on recent use
     finder.AppleShowAllExtensions = true;
+    finder.FXPreferredViewStyle = "clmv";  # column view
     loginwindow.LoginwindowText = "Freedom!";
     screencapture.location = "~/Pictures";
     screensaver.askForPasswordDelay = 0;
