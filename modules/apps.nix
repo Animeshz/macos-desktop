@@ -4,4 +4,15 @@
   environment.systemPackages = with pkgs; [
     just
   ];
+
+  homebrew = {
+    enable = true;
+
+    onActivation = {
+      autoUpdate = false; # annoying
+      cleanup = "zap";
+    };
+
+    casks = [ "visual-studio-code" ];
+  };
 }

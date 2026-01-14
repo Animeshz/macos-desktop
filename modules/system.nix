@@ -17,15 +17,4 @@
   nix.extraOptions = ''
     extra-platforms = x86_64-darwin aarch64-darwin
   '';
-
-  homebrew = {
-    enable = true;
-
-    onActivation = {
-      autoUpdate = false; # annoying
-      cleanup = "zap";
-    };
-
-    casks = [ "visual-studio-code" ];
-  };
 }
