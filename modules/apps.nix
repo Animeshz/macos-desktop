@@ -2,8 +2,8 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    neovim
     just
-    kitty
   ];
 
   homebrew = {
