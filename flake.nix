@@ -12,6 +12,9 @@
 
     snowfall-lib.url = "github:snowfallorg/lib";
     snowfall-lib.inputs.nixpkgs.follows = "nixpkgs";
+
+    nix-index-database.url = "github:Mic92/nix-index-database";
+    nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = inputs: inputs.snowfall-lib.mkFlake {
     inherit inputs;
