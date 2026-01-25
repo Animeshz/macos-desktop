@@ -14,6 +14,6 @@
       cleanup = "zap";
     };
 
-    casks = [ "visual-studio-code" ];
+    casks = [ "visual-studio-code" "iina" ];
   };
 }

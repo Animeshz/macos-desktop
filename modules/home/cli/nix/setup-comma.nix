@@ -5,7 +5,7 @@ let
 in
 with lib;
 {
-  imports = [ inputs.nix-index-database.hmModules.nix-index ];
+  imports = [ inputs.nix-index-database.homeModules.nix-index ];
 
   options.united.cli.nix.setupComma = mkEnableOption "nix-community/comma";
 
